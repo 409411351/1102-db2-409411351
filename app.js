@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 const crown_51_Router = require('./routes/crown_51')
 const crown2_51_Router = require('./routes/crown2_51')
-const crown2_shop_51_hats_Router = require('./routes/crown2_51/shop_51/hats')
+const crown2_shop_51_hats_Router = require('./routes/hats')
 
 var app = express();
 

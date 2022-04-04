@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crown Clothing</title>
-    <link rel="stylesheet" href="../../../public/css/style.css" />
+    <link rel="stylesheet" href="../.././css/style.css" />
   </head>
   <body>
     <div class="header">
       <a href="/" class="logo-container">
-        <img src="../../../public/assets/crown.svg" />
+        <img src="../.././assets/crown.svg" />
       </a>
       <div class="options">
         <a href="./overview.html" class="option">Shop</a>
         <a href="/shop" class="option">Contact</a>
         <a href="/signin" class="option">Sign In</a>
         <div class="cart-icon" onclick="cartToggle()">
-          <img class="shopping-icon" src="../../../public/assets/shopping-bag.svg alt="" />
+          <img class="shopping-icon" src="../.././assets/shopping-bag.svg " alt="" />
         </div>
         <div class="cart-dropdown">
           <div class="cart-items">
@@ -50,14 +50,14 @@
 
         <% for(let i=0; i<data.length; i++){ %>
           <div class="collection-item">
-            <img class="image" src="<%= data[i].local_url %>" alt=""/>
+            <img class="image" src="<%= data[i].local_url %>" />
             <div class="collection-footer">
               <span class="name"><%= data[i].name %></span>
               <span class="price"><%= data[i].price %></span>
             </div>
             <button class="custom-button">Add to Cart</button>
           </div>
-         <% } %> 
+        <% } %> 
         </div>
       </div>
     </div>
