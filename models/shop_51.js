@@ -38,11 +38,11 @@ const shop_51 = class shop_51{
 }
 
 //testing
-const test = async () =>{
-    let results = await shop_51.fetchProductsByCategory(1);
-    console.log('test results', JSON.stringify(results));
-}
+// const test = async () =>{
+//     let results = await shop_51.fetchProductsByCategory(1);
+//     console.log('test results', JSON.stringify(results));
+// }
 
-test();
+// test();
 
 module.exports = shop_51;

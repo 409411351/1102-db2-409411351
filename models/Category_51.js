@@ -23,14 +23,25 @@ const Category_51 = class Category_51{
             console.log('error',err);
         }
     }
+
+    static async fetchCatIdByName(name){
+        try{
+            let results = await db.query(`SELECT * from category_51 where name = $1`,[name])
+            
+            return results.rows[0].id;
+        }catch(err){
+            console.log(err);
+        }
+    }
+    
 }
 
 //testing
-const test = async () =>{
-    let results = await Category_51.fetchAll();
-    console.log('test results', JSON.stringify(results));
-}
+// const test = async () =>{
+//     let results = await Category_51.fetchAll();
+//     console.log('test results', JSON.stringify(results));
+// }
 
-test();
+// test();
 
 module.exports = Category_51;
