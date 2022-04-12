@@ -29,6 +29,14 @@ router.get('/shop_51/:category', async function(req,res){
     console.log('cid',cid);
     let results = await shop_51.fetchProductsByCategory(cid);
     console.log('results',JSON.stringify(results));
+
+    res.render('crown2_51/products_51', 
+    { 
+      data: results,
+      title: req.params.category,
+      id: '409411351', 
+      name: '吳信篁' 
+    });
   }catch(err){
     console.log(err);
   }
