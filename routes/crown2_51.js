@@ -19,4 +19,8 @@ router.get('/', async function(req, res, next) {
   }
 });
 
+router.get('/shop_51/:category', async function(req,res){
+  console.log('category', req.params.category);
+})
+
 module.exports = router;
