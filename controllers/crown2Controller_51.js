@@ -2,10 +2,10 @@ const Category_51 = require('../models/Category_51');
 const shop_51 = require('../models/shop_51');
 
 //CREATE
-// exports.createProducts = async(req,res) =>{
-//     console.log('body',req.body);
-//     res.json({msg:'create -- body data received'});
-// };
+exports.createProducts = async(req,res) =>{
+    console.log('body',req.body);
+    res.json({msg:'create -- body data received'});
+};
 
 //READ
 exports.getCategories = async(req,res)=>{

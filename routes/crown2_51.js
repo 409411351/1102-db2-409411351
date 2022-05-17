@@ -7,7 +7,7 @@ const shop_51 = require('../models/shop_51');
 const crown2Controller_51 = require('../controllers/crown2Controller_51');
 
 //CREATE
-// router.post('/product_51',)
+router.post('/product_51',crown2Controller_51.createProducts);
 
 //READ
 router.get('/',crown2Controller_51.getCategories);
