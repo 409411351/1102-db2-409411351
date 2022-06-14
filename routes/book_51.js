@@ -53,4 +53,20 @@ router.get('/create',(req,res) => {
     });
 });
 
+//DELETE
+
+router.get('/delete/:id',async (req,res) => {
+    try{
+        console.log('delete id',req.params.id);
+        const query = {
+            text:`DELETE FROM book_51 WHERE id = $1`,
+            values:[req.params.id]
+        };
+        const results = await db.query(query);
+        res.redirect('/book_51');
+    }catch(err){
+        console.log(err);
+    }
+});
+
 module.exports = router;
