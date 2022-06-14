@@ -17,13 +17,13 @@
       <div class="card">
         <div class="card-header">Edit Book</div>
         <div class="card-body">
-          <form action="/books/update" method="post">
+          <form action="/book_51/update" method="post">
             <div class="form-group">
               <input
                 type="hidden"
                 class="form-control"
                 name="id"
-                value=""
+                value="<%= id %>"
                 autocomplete="off"
               />
             </div>
@@ -33,7 +33,7 @@
                 type="text"
                 class="form-control"
                 name="name"
-                value=""
+                value="<%= name %>"
                 autocomplete="off"
               />
             </div>
@@ -43,7 +43,17 @@
                 type="text"
                 class="form-control"
                 name="author"
-                value=""
+                value="<%= author %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label>Price:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="price"
+                value="<%= price %>"
                 autocomplete="off"
               />
             </div>
